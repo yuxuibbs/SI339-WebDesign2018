@@ -1,20 +1,42 @@
 @media only screen and (min-width: 650px) {
+    .photo-cell img {
+        width: 100%;
+    }
     .top-nav ul li {
         display: inline-block;
     }
     .top-nav ul {
         text-align: center;
     }
-    .half {
+    .photo-cell {
         display: inline-block;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .half {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .logo {
         float: left;
-        width: 47%;
+    }
+    .photo-cell img {
+        width: 100%;
+    }
+    .top-nav ul li {
+        display: inline-block;
+    }
+    .top-nav ul {
         text-align: center;
     }
-
-
-
-    body {
-        background-color: blue;
+    .photo-cell {
+        display: inline-block;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .half {
+        width: 50%;
     }
 }
