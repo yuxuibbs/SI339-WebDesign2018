@@ -18,10 +18,10 @@ img {
     filter: grayscale(100%);
 }
 
-/*
+
 img:focus {
     border: 5px solid blue;
-}*/
+}
 
 .bar {
     background-color: lightgray;
