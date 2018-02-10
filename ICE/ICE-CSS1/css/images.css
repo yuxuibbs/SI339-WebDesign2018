@@ -4,13 +4,63 @@ img {
     border: 5px solid black;
     margin: 1%;
     box-sizing: border-box;
-
 }
 
 .hover:hover {
     border-radius: 45%;
 }
 
+.active:active {
+    opacity: 0.5;
+}
+
+.focus:focus {
+    filter: grayscale(100%);
+}
+
+/*
 img:focus {
     border: 5px solid blue;
+}*/
+
+.bar {
+    background-color: lightgray;
+    height: 50px;
+    position: relative;
+}
+
+.square {
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.square:hover {
+    animation: moveRight 4s linear;
+}
+
+.square:active {
+    background-color: red;
+    animation: spin 4s linear;
+}
+
+
+@keyframes moveRight {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
