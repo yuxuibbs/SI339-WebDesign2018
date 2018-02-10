@@ -4,6 +4,7 @@
     }
     .top-nav ul li {
         display: inline-block;
+        border-top: 1px solid red;
     }
     .top-nav ul {
         text-align: center;
@@ -22,21 +23,27 @@
     .logo {
         float: left;
     }
-    .photo-cell img {
-        width: 100%;
-    }
     .top-nav ul li {
         display: inline-block;
+        border-top: none;
     }
     .top-nav ul {
-        text-align: center;
+        text-align: right;
+        padding-top: 10px;
     }
     .photo-cell {
         display: inline-block;
         margin: 0px;
         box-sizing: border-box;
+        width: 50%;
+    }
+    .left img {
+        float: left;
+    }
+    .right img {
+        float: right;
     }
     .half {
-        width: 50%;
+        width: 25%;
     }
 }

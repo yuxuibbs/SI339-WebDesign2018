@@ -43,7 +43,7 @@ img:focus {
 
 .square:active {
     background-color: red;
-    animation: spin 4s linear;
+    animation: spin 2s infinite linear;
 }
 
 
