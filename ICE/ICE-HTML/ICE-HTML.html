@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Yuxuan Chen ICE1</title>
@@ -27,15 +27,19 @@
             <input type="text" name="name" id = "name"><br>
             <label for="dob">DOB:</label>
             <input type="date" name="DOB" id = "dob"><br>
-            <label for="snack">Please enter your choice of snack:</label><br>
-            <input type="radio" name="snack" value="pizza"> Pizza<br>
-            <input type="radio" name="snack" value="donut"> Donut<br>
-            <input type="radio" name="snack" value="vegan"> Vegan Stuff<br>
-            <label for="drink">Please enter your choice of drink:</label><br>
-            <input type="radio" name="snack" value="coffee"> Coffee<br>
-            <input type="radio" name="snack" value="tea"> Tea<br>
-            <input type="radio" name="snack" value="water"> Water<br>
-            <input type="submit" value="Submit">
+            <fieldset>
+                Please enter your choice of snack:<br>
+                <input type="radio" name="snack" value="pizza"> Pizza<br>
+                <input type="radio" name="snack" value="donut"> Donut<br>
+                <input type="radio" name="snack" value="vegan"> Vegan Stuff<br>
+            </fieldset>
+            <fieldset>
+                Please enter your choice of drink:<br>
+                <input type="radio" name="drink" value="coffee"> Coffee<br>
+                <input type="radio" name="drink" value="tea"> Tea<br>
+                <input type="radio" name="drink" value="water"> Water<br>
+            </fieldset>
+                <input type="submit" value="Submit">
         </form>
     </body>
 </html>
