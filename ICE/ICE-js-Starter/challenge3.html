@@ -6,7 +6,14 @@
     <script type="text/javascript">
     function checkForm(){
     	// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
-		} 
+      if (document.getElementById("opt-straw").checked || document.getElementById("opt-blue").checked) {
+          return true;
+      }
+      else {
+        alert("Please select your favorite berry!");
+        return false;
+      }
+    } 
     </script>
 </head>
 <body>
@@ -26,6 +33,12 @@
       </div>
   </fieldset>
   <input type="submit" value="Pick your fruit!">
+    <script type="text/javascript">
+    var radios = document.querySelectorAll("input[type='radio']");
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].setAttribute("name", "fruits");
+    }
+  </script>
 </form>
 </body>
 </html>
