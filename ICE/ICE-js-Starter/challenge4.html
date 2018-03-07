@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Challenge 4</title>
+    <meta charset="UTF-8">
+    <title>Challenge 4</title>
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <style>
     .errormsg { 
         /*font: Use a cool Google font*/
         font-family: "Rock Salt", cursive;
-    	color:red;
-    	display:none; } 
+        color:red;
+        display:none; } 
     </style>
     
     <script type="text/javascript">
     function checkForm(){
-    	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+        // Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
         var name = document.getElementById("fullname").value;
         var addr = document.getElementById("streetaddr").value;
 
@@ -36,7 +36,7 @@
 </head>
 <body>
     <h1>Challenge 4</h1>
-	<form action="challenge5.html" onsubmit="return checkForm();">
+    <form action="challenge5.html" onsubmit="return checkForm();">
         <fieldset>
         <legend>Personal details</legend>
           <label for="fullname">Full name: </label>
