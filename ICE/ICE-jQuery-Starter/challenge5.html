@@ -46,7 +46,7 @@
             $("#image").text($(this).attr("alt"));
             $("#image").css('background-image', "url('" + $(this).attr("src") + "')");
         })
-        $(".preview").on("mouseleave", function() {
+        $(".preview").on("blur mouseleave", function() {
             $("#image").text("Hover over an image below.");
             $("#image").css('background-image', "");
         })
