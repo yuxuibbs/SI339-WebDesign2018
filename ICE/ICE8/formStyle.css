@@ -1,0 +1,72 @@
+/* GENERAL APPEARANCE */
+html, body, h1, form, fieldset, legend, ol, li {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #ffffff;
+	color: #111111;
+	font-family: Palatino, Georgia, "Times New Roman", Times, serif;
+	padding: .5%;
+}
+h4{
+	font-size: 30px;
+	margin: 5px;
+}
+
+form{
+	background: #C6EADD;
+	-moz-border-radius: 2%;
+	-webkit-border-radius: 2%;
+	border-radius: 2%;
+	padding: 2%;
+	width: 50%;
+}
+
+fieldset{
+	padding: 2%;
+}
+
+legend{
+	background:#F5F5F5;
+	font-size: 22px;
+}
+
+
+label input{
+	display:block;
+}
+
+label{
+	display:block;
+}
+
+
+/*Add a counter to the elements */
+form{
+	counter-reset: fieldsets;
+}
+
+form > fieldset > legend:before {
+	content: "Step " counter(fieldsets) ": ";
+	counter-increment: fieldsets;
+}
+
+
+/*payment formatting */
+form fieldset fieldset label {
+	background:none no-repeat left 50%;
+	line-height: 20px;
+	padding: 0 0 0 30px;
+	width: auto;
+
+}
+form label[for=visa] {
+	background-image: url("img/visa.gif");
+}
+form label[for=amex] {
+	background-image: url("img/amex.gif");
+}
+form label[for=mastercard] {
+	background-image: url("img/mastercard.gif");
+}
