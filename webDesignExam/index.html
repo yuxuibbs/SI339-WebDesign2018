@@ -2,17 +2,26 @@
 <html>
 <head>
     <title>SI339 exam</title>
-    <script type="text/javascript">
-        
-    </script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    function hideImg() {
+        $('#colleen').hide();
+        $('#umsi').parent().css('text-align', 'center');
+    }
+    function showImg() {
+        $('#colleen').show();
+    }
+    </script>
 </head>
 <body>
     <h1>Yuxuan Chen</h1>
-    <img src="images/examPic.JPG"><!-- 
-     --><img src="images/UMSI-logo.jpg">
+    <div>
+    <img id="colleen" src="images/examPic.JPG" alt="picture with colleen"><!-- 
+     --><img id="umsi" src="images/UMSI-logo.jpg" alt="umsi logo">
+    </div>
+    <br>
     <button type="button" onclick="hideImg()">Hide Image</button>
     <button type="button" onclick="showImg()">Show Image</button>
-
 </body>
 </html>

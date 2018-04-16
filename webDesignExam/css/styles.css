@@ -9,3 +9,7 @@ img {
 h1 {
     line-height: 0;
 }
+
+body {
+    background-image: url('../images/tic-tac-toe.png');
+}
